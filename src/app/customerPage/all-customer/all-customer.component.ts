@@ -25,4 +25,12 @@ export class AllCustomerComponent {
         console.log(res);
       })
     }
+
+    deleteCustomer(customer:any){
+
+      this.http.delete(`http://localhost:8080/cus-controller/delete-customer/${customer.customerId}`).subscribe(res=>{
+        this.lordCustomerTable();
+      })
+      console.log("Deleted");
+    }
 }
