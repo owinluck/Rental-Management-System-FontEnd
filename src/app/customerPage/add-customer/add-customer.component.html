@@ -1,0 +1,21 @@
+<div class="container m-5">
+    <h1 class="text-center mb-4 bg-black p-4 text-white fw-bold">Add Customer</h1>  
+    <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1"></span>
+          <input type="text" class="form-control" placeholder="Customer Name" aria-label="Username" [(ngModel)]="customerOb.customerName"  aria-describedby="basic-addon1">
+        </div>
+  
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1"></span>
+          <input type="text" class="form-control" placeholder="Customer Contact Number" aria-label="Username" [(ngModel)]="customerOb.phoneNumber"  aria-describedby="basic-addon1">
+        </div>
+        
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="City" aria-label="Recipient's username" [(ngModel)]="customerOb.city" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2"></span>
+        </div>
+        
+        <button type="button" class="btn btn-success" (click)="addCustomer()" >Add Customer</button>
+  
+  
+  </div>
