@@ -15,6 +15,13 @@ import Swal from 'sweetalert2';
 export class AllCustomerComponent {
 
     public customerList:any;
+    public selectEmployee={
+      id:"",
+      name:"",
+      contact:"",
+      department:"",
+      rollId:""
+    }
 
     constructor(private http:HttpClient){
       this.lordCustomerTable()
@@ -71,10 +78,11 @@ export class AllCustomerComponent {
       
     }
 
+    updateCustomer(customer:any){
 
-    // this.http.delete(`http://localhost:8080/cus-controller/delete-customer/${customer.customerId}`).subscribe(res=>{
-    //   this.lordCustomerTable();
-    // })
-    // console.log("Deleted");
+    
+
+    }
+    
 }
 
